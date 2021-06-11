@@ -1,2 +1,2 @@
-* Thu May 20 2021 razuwaikin <artyomgorbatenko@gmail.com> 0.1.0.0
+* Mon May 17 2021 navckin <navolotskaia.anna@gmail.com> 0.1.0.0
 - Initial RPM release
