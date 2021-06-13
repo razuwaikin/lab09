@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/anya/navckin/workspace/tasks/lab03/lab03/solver_application/solver_lib/solver.cpp
+/home/andrey/Berendei-Jr/workspace/projects/Lab4/solver_application/solver_lib/solver.cpp
 solver.h
-/home/anya/navckin/workspace/tasks/lab03/lab03/solver_application/solver_lib/solver.h
-cmath
+/home/andrey/Berendei-Jr/workspace/projects/Lab4/solver_application/solver_lib/solver.h
+math.h
 -
 stdexcept
 -
 
-/home/anya/navckin/workspace/tasks/lab03/lab03/solver_application/solver_lib/solver.h
+/home/andrey/Berendei-Jr/workspace/projects/Lab4/solver_application/solver_lib/solver.h
 

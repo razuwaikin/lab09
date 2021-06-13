@@ -23,6 +23,4 @@ add_subdirectory(solver_lib)
 add_subdirectory(formatter_ex_lib)
 add_executable(solver equation.cpp)
 
-add_executable(CPackConfig.cmake)
-
 target_link_libraries(solver PUBLIC Boost::boost solver_lib formatter_ex)

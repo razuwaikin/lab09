@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application
+CMAKE_SOURCE_DIR = /home/andrey/Berendei-Jr/workspace/projects/Lab4/solver_application
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application
+CMAKE_BINARY_DIR = /home/andrey/Berendei-Jr/workspace/projects/Lab4/solver_application
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(CMAKE_COMMAND) -E cmake_progress_start /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application/CMakeFiles /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application/solver_lib/CMakeFiles/progress.marks
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(MAKE) -f CMakeFiles/Makefile2 solver_lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application/CMakeFiles 0
+	cd /home/andrey/Berendei-Jr/workspace/projects/Lab4/solver_application && $(CMAKE_COMMAND) -E cmake_progress_start /home/andrey/Berendei-Jr/workspace/projects/Lab4/solver_application/CMakeFiles /home/andrey/Berendei-Jr/workspace/projects/Lab4/solver_application/solver_lib/CMakeFiles/progress.marks
+	cd /home/andrey/Berendei-Jr/workspace/projects/Lab4/solver_application && $(MAKE) -f CMakeFiles/Makefile2 solver_lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrey/Berendei-Jr/workspace/projects/Lab4/solver_application/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(MAKE) -f CMakeFiles/Makefile2 solver_lib/clean
+	cd /home/andrey/Berendei-Jr/workspace/projects/Lab4/solver_application && $(MAKE) -f CMakeFiles/Makefile2 solver_lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(MAKE) -f CMakeFiles/Makefile2 solver_lib/preinstall
+	cd /home/andrey/Berendei-Jr/workspace/projects/Lab4/solver_application && $(MAKE) -f CMakeFiles/Makefile2 solver_lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(MAKE) -f CMakeFiles/Makefile2 solver_lib/preinstall
+	cd /home/andrey/Berendei-Jr/workspace/projects/Lab4/solver_application && $(MAKE) -f CMakeFiles/Makefile2 solver_lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/andrey/Berendei-Jr/workspace/projects/Lab4/solver_application && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 solver_lib/CMakeFiles/solver_lib.dir/rule:
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(MAKE) -f CMakeFiles/Makefile2 solver_lib/CMakeFiles/solver_lib.dir/rule
+	cd /home/andrey/Berendei-Jr/workspace/projects/Lab4/solver_application && $(MAKE) -f CMakeFiles/Makefile2 solver_lib/CMakeFiles/solver_lib.dir/rule
 .PHONY : solver_lib/CMakeFiles/solver_lib.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ solver_lib: solver_lib/CMakeFiles/solver_lib.dir/rule
 
 # fast build rule for target.
 solver_lib/fast:
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(MAKE) -f solver_lib/CMakeFiles/solver_lib.dir/build.make solver_lib/CMakeFiles/solver_lib.dir/build
+	cd /home/andrey/Berendei-Jr/workspace/projects/Lab4/solver_application && $(MAKE) -f solver_lib/CMakeFiles/solver_lib.dir/build.make solver_lib/CMakeFiles/solver_lib.dir/build
 .PHONY : solver_lib/fast
 
 solver.o: solver.cpp.o
@@ -131,7 +131,7 @@ solver.o: solver.cpp.o
 
 # target to build an object file
 solver.cpp.o:
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(MAKE) -f solver_lib/CMakeFiles/solver_lib.dir/build.make solver_lib/CMakeFiles/solver_lib.dir/solver.cpp.o
+	cd /home/andrey/Berendei-Jr/workspace/projects/Lab4/solver_application && $(MAKE) -f solver_lib/CMakeFiles/solver_lib.dir/build.make solver_lib/CMakeFiles/solver_lib.dir/solver.cpp.o
 .PHONY : solver.cpp.o
 
 solver.i: solver.cpp.i
@@ -140,7 +140,7 @@ solver.i: solver.cpp.i
 
 # target to preprocess a source file
 solver.cpp.i:
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(MAKE) -f solver_lib/CMakeFiles/solver_lib.dir/build.make solver_lib/CMakeFiles/solver_lib.dir/solver.cpp.i
+	cd /home/andrey/Berendei-Jr/workspace/projects/Lab4/solver_application && $(MAKE) -f solver_lib/CMakeFiles/solver_lib.dir/build.make solver_lib/CMakeFiles/solver_lib.dir/solver.cpp.i
 .PHONY : solver.cpp.i
 
 solver.s: solver.cpp.s
@@ -149,7 +149,7 @@ solver.s: solver.cpp.s
 
 # target to generate assembly for a file
 solver.cpp.s:
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(MAKE) -f solver_lib/CMakeFiles/solver_lib.dir/build.make solver_lib/CMakeFiles/solver_lib.dir/solver.cpp.s
+	cd /home/andrey/Berendei-Jr/workspace/projects/Lab4/solver_application && $(MAKE) -f solver_lib/CMakeFiles/solver_lib.dir/build.make solver_lib/CMakeFiles/solver_lib.dir/solver.cpp.s
 .PHONY : solver.cpp.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/anya/navckin/workspace/tasks/lab03/lab03/solver_application && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/andrey/Berendei-Jr/workspace/projects/Lab4/solver_application && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
