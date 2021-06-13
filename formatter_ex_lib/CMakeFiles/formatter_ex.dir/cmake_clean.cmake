@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/formatter_ex.dir/formatter_ex.cpp.o"
+  "CMakeFiles/formatter_ex.dir/formatter_ex.cpp.o.d"
   "libformatter_ex.a"
   "libformatter_ex.pdb"
 )
