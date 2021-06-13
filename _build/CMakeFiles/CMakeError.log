@@ -1,0 +1,58 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/phil/A7las96/workspace/projects/lab09/_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e099e/fast && /usr/bin/make -f CMakeFiles/cmTC_e099e.dir/build.make CMakeFiles/cmTC_e099e.dir/build
+make[1]: вход в каталог «/home/phil/A7las96/workspace/projects/lab09/_build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_e099e.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_e099e.dir/src.c.o   -c /home/phil/A7las96/workspace/projects/lab09/_build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e099e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e099e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_e099e.dir/src.c.o  -o cmTC_e099e 
+/usr/bin/ld: CMakeFiles/cmTC_e099e.dir/src.c.o: в функции «main»:
+src.c:(.text+0x46): неопределённая ссылка на «pthread_create»
+/usr/bin/ld: src.c:(.text+0x52): неопределённая ссылка на «pthread_detach»
+/usr/bin/ld: src.c:(.text+0x63): неопределённая ссылка на «pthread_join»
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e099e.dir/build.make:87: cmTC_e099e] Ошибка 1
+make[1]: выход из каталога «/home/phil/A7las96/workspace/projects/lab09/_build/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_e099e/fast] Ошибка 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/phil/A7las96/workspace/projects/lab09/_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_40b53/fast && /usr/bin/make -f CMakeFiles/cmTC_40b53.dir/build.make CMakeFiles/cmTC_40b53.dir/build
+make[1]: вход в каталог «/home/phil/A7las96/workspace/projects/lab09/_build/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_40b53.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_40b53.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_40b53
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40b53.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_40b53.dir/CheckFunctionExists.c.o  -o cmTC_40b53  -lpthreads 
+/usr/bin/ld: невозможно найти -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_40b53.dir/build.make:87: cmTC_40b53] Ошибка 1
+make[1]: выход из каталога «/home/phil/A7las96/workspace/projects/lab09/_build/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_40b53/fast] Ошибка 2
+
+
+
