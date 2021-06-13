@@ -1,4 +1,4 @@
-[![Build Status](https://www.travis-ci.com/razuwaikin/lab07.svg?branch=master)](https://www.travis-ci.com/razuwaikin/lab07)
+[![Build Status](https://www.travis-ci.com/razuwaikin/lab08.svg?branch=master)](https://www.travis-ci.com/razuwaikin/lab08)
 # Лабораторная работа №7
 
   1) Для настройки Hunter-пакета из solver нужно сосздать папку cmake и из нее прописать команду ```
